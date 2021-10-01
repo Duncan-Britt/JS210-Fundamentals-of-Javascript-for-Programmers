@@ -1,5 +1,13 @@
 rlSync = require('readline-sync');
 
-let fName = rlSync.question("What's your first name? ");
-let lName = rlSync.question("What's your last name? ");
-console.log(`Hello, ${fName} ${lName}!`);
+console.log(`Hello, ${getName('first')} ${getName('last')}!`);
+
+function getName(firstOrLast) {
+  return rlSync.question(`What's your ${firstOrLast} name? `);
+}
+
+// console.log(`Hello, ${getName(rlSync.question, 'first')} ${getName(rlSync.question, 'last')}!`);
+//
+// function getName(prompt, firstOrLast) {
+//   return prompt(`What's your ${firstOrLast} name? `);
+// }
