@@ -1,9 +1,22 @@
+// function factorial(n) {
+//   let r = 1
+//   for (var i = 1; i <= n; ++i) {
+//     r *= i
+//   }
+//   return r
+// }
+
+// function factorial(n, r = 1, i = 1) {
+//   if (i > n) return r;
+//
+//   r *= i;
+//   return factorial(n, r, ++i);
+// }
+
 function factorial(n) {
-  let r = 1
-  for (var i = 1; i <= n; ++i) {
-    r *= i
-  }
-  return r
+  if (n === 1) return n;
+  
+  return n * factorial(n - 1);
 }
 
 console.log(factorial(1));     // => 1
