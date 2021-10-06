@@ -37,8 +37,3 @@ function rot13(text) {
 
   return rotated_text;
 }
-
-console.log(
-  rot13('Teachers open the door, but you must enter by yourself.') ===
-  'Grnpuref bcra gur qbbe, ohg lbh zhfg ragre ol lbhefrys.'
-);
