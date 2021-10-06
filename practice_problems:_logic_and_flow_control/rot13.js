@@ -14,13 +14,14 @@ function rot13(text) {
   let rotated_text = '';
 
   for (let index = 0; index < text.length; index++) {
-    if (isNotAlphabetical(text[index])) {
-      rotated_text += text[index];
+    let character = text[index];
+    if (isNotAlphabetical(character)) {
+      rotated_text += character;
       continue;
     }
 
     let conversion;
-    if (isUpperCase(text[index])) {
+    if (isUpperCase(character)) {
       conversion = UPPERCASE_CHAR_CODE;
     } else {
       conversion = LOWERCASE_CHAR_CODE;
