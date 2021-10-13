@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/Duncan-Britt/JS210-Fundamentals-of-Javascript-for-Programmers#readme",
   "dependencies": {
+    "npm": "^8.0.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1"
   }
 }
